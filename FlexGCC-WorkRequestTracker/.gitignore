@@ -1,0 +1,107 @@
+# ==============================================================================
+# FlexGCC Work Request Tracker — Comprehensive .gitignore
+# Covers .NET Core, React/Vite, SQLite databases, OS & IDE artifacts
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# .NET / C# Build Artifacts
+# ------------------------------------------------------------------------------
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/[Bb]uild/
+**/temp_check/
+
+# Visual Studio / Rider / Omnisharp
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.user
+*.suo
+*.userprefs
+*.userosscache
+*.sln.docstates
+*.ide/
+
+# Testing
+TestResults/
+[Tt]est[Rr]esult*/
+coverage/
+*.trx
+
+# NuGet Packages
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ------------------------------------------------------------------------------
+# Database & Runtime Data Files
+# ------------------------------------------------------------------------------
+# Ignore SQLite database files generated at runtime
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+**/workrequests.db*
+**/test_*.db*
+
+# ------------------------------------------------------------------------------
+# Frontend / Node / Vite
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+*.local
+
+# Environment variables (keep .env.example)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / Framework caches
+.eslintcache
+.stylelintcache
+.oxlintcache
+.vite/
+.turbo/
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Scratch & temporary workspace files
+scratch/
+**/scratch/
+*~
+*.swp
+*.swo
